@@ -3,7 +3,7 @@
 
 Priorly run:  [main.R](main.R) 
 
-* Monocle Documentations: 
+* Monocle Documentations:  [monocle_trajectory_HVG.R](monocle_trajectory_HVG.R) 
 * Monocle Tutorials
   * Olsson Dataset Analysis: 
   * Paul Dataset Analysis: 
