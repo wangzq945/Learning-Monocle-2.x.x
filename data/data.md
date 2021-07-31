@@ -7,13 +7,23 @@
 mkdir data
 ```
 
+* C. elegans dataset (from [Packer & Zhu et al](http://dx.doi.org/10.1101/565549)): 
+  * Their study includes a time series analysis of whole developing embyros. 
+  * We will examine a small subset of the data which includes most of the neurons.
+
 ```sh
 # for: monocle
-# dataset of Peripheral Blood Mononuclear Cells (PBMC) freely available from 10X Genomics
-file="pbmc3k_filtered_gene_bc_matrices.tar.gz"
-url="https://cf.10xgenomics.com/samples/cell/pbmc3k/pbmc3k_filtered_gene_bc_matrices.tar.gz"
-cd data
-wget $url
-tar -zxvf $file
-cd ../
+# C. elegans dataset
+file1="packer_embryo_expression.rds"
+url1="http://staff.washington.edu/hpliner/data/packer_embryo_expression.rds"
+file2="packer_embryo_colData.rds"
+url2="http://staff.washington.edu/hpliner/data/packer_embryo_colData.rds"
+file3="packer_embryo_rowData.rds"
+url3="http://staff.washington.edu/hpliner/data/packer_embryo_rowData.rds"
+mkdir -p data/packer_embryo
+cd data/packer_embryo
+wget $url1
+wget $url2
+wget $url3
+cd ../../
 ```
